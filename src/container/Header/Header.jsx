@@ -1,10 +1,20 @@
-import React from 'react';
-
-import './Header.css';
+import React from "react";
+import {images} from "../../constants";
+import { SubHeading } from "../../components";
+import "./Header.css";
 
 const Header = () => (
-  <div>
-    Header
+  <div className="app__header app__wrapper section__padding" id="home">
+    <div className="app__wrapper_info">
+      <SubHeading title = "Chase the new flavour"></SubHeading>
+      {/* <h1 className="app__header-h1">Feasts Delivered Delightfully</h1> */}
+      <h1 className="app__header-h1">Savor the Celebration</h1>
+      <p className="p__opensans" style={{margin : '2rem 0'}}>PC Caterers: Crafting Culinary Delights. Experience extraordinary meals, meticulously prepared and presented for your events.</p>
+      <button type="button" className="custom__button">Explore Menu</button>
+    </div>
+    <div className="app__wrapper_img">
+      <img src={images.welcome} alt="header_img" />
+    </div>
   </div>
 );
 
